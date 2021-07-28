@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap);
+/* estilos en el html */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    color: red;
+}
+
+body{
+    background-image: url(/images/acdc_background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 0 0;
+}
+
+section div p span a{
+    color: aliceblue;
+}
+
+section div div a{
+    margin-left: 2.5px;
+}
+
+/* estilos por class */
+.buttonFormulario{
+    background-color: rgb(74, 141, 218);
+    border: 2px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.buttonFormulario:hover{
+    background-color: rgb(25, 114, 216);
+    cursor: pointer;
+}
+
+.bordeRedondeado{
+    border-radius: 20px;
+}
+
+.subtituloPagina{
+    font-size: 25px;
+    margin-left: 45px;
+    padding-left: 20px;
+}
+
+
+.divPadreHeader{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    top: 0; 
+
+}
+
+.divDescripcion{
+    text-align: center;
+    flex-direction: row;  
+    margin: 50px 40px 50px 50px;
+    width: 100%;
+}
+
+.divImagen{
+    margin: 40px 40px 40px 40px;
+}
+
+.imgLogin{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.divCentrado{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+.divFooter{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionEspaciado{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 68vh;
+}
+
+.footerEspaciado{
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+
+.sectionImagenBandaYDescripcion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex; 
+    flex-direction: row;
+    grid-area: "sectionUno";
+    align-items: center;
+    height: 72vh;
+}
+
+.curiosidades_banda{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listaCuriosidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listaCuriosidades li{
+    list-style-image: url(/images/angus-young2.png);
+    margin: 40px 0px 40px 0px;
+    width: 75%;
+}
+
+.titleCuriosidad{
+    font-size: 35px;
+    color: darkgoldenrod;
+}
+
+.subtitleCuriosidad{
+    font-size: 25px;
+    font-family: emoji;
+}
+
+.tituloCuriosidades{
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    font-size: 50px;
+    color: white;
+}
+
+.tituloVideos{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.textoDescripcion{
+    font-size: 24px;
+}
+
+.contenedorRedes{
+    margin-left: 10px;;
+    color: aliceblue;
+}
+
+.textoCopy{
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+}
+
+.gridOrganizado{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "sectionUno"
+    "ultimoLanzamiento"
+    "recitales"
+    "piePagina"
+    ;
+}
+
+.divFormulario{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* estilos por id */
+#menuPrincipal{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+#redesSociales{
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+#redesSociales li{
+    padding-left: 5px;
+}
+
+#redesSociales li:hover{
+    transform: scale(1.2,1.2);
+}
+
+#menuPrincipal li{ 
+    margin: 2px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    display: inline-block;
+    width: 120px;
+    position: relative;
+    text-align: center;
+}
+
+#menuPrincipal li a{
+    font-size: 25px;
+    color: aliceblue;
+}
+
+#header{
+    grid-area: "menu";
+    margin: 0px auto;
+    width: 100%;
+}
+
+#ultimoLanzamiento{
+    grid-area: "ultimoLanzamiento";
+}
+
+#recitales{
+    grid-area: "recitales";
+}
+
+#piePagina{
+    grid-area: "piePagina";
+}
+
+#formulario{
+    margin: 40px 0px 0px 0px;
+}
+
+
+/* animaciones */
+
+@keyframes zoomIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.3, 0.3);
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
+.zoomIn{
+    animation-name: zoomIn;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    animation-duration: 0.3s;
+    max-height: 200px;
+    overflow: auto;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+}
+
+
+@keyframes fadeInIzq {
+    0%{
+        opacity: 0;
+        transform: translate(100%,0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+.fadeInIzq{
+    animation-name: fadeInIzq;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+}

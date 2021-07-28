@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ac/Dc Fan's Page</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap" rel="stylesheet">
+    </head>
+    <body id="inicio">
+        <header id="header">
+            <div class="divPadreHeader">
+                <div>
+                    <img src="images/ac_dc.png" alt="logo" width="200" height="100" class="imgLogin">
+                    <p class="subtituloPagina">A Fan's page</p>
+                </div>
+                <div id="menuPrincipal">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discografia.html">Discografia</a></li>
+                        <li><a href="miembros.html">Miembros</a></li>
+                        <li><a href="curiosidades_acdc.html">Curiosidades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>                                     
+                    </ul> 
+                </div>
+                <hr>
+            </div>
+        </header>
+        <section id="formulario">
+            <div class="divFormulario">
+                <form action="" method="" enctype="">
+                    <fieldset>
+                        <legend>Informacion personal</legend>
+                            <label for="nombre_com">Nombre Completo:</label>
+                            <input type="text" name="nombre_com"><br>
+
+                            <label for="correo">Correo electronico</label>
+                            <input type="email" name="correo"><br>
+
+                            <label for="motivos">Motivo por el cual se comunica</label>
+                            <select name="motivos" id="Mot">
+                                <option value="1">Informacion erronea</option>
+                                <option value="2">Sugerencias para mejorar la pagina</option>
+                                <option value="3">Reportar bugs</option>
+                                <option value="4">Presupuesto para diseñar pagina</option>
+                            </select><br>
+                            
+                            <label for="Comentarios">Comentarios</label><br>
+                            <textarea name="Comentarios" id="Coments" cols="30" rows="10"></textarea><br>
+
+                            <label for="chBox">Acepta terminos y condiciones</label>
+                            <input type="checkbox" name="chBox" value="0"><br>
+
+                            <input type="submit" class="buttonFormulario" value="Enviar">
+                            <input type="reset" class="buttonFormulario" value="Limpiar formulario">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <footer class="footerEspaciado">
+            <div class="divCentrado">
+                <img src="images/ac_dc.png" alt="logo_footer" width="100" height="50">
+                <p class="">Mencion del copyright</p>
+            </div>
+            <a href="#inicio">Ir al Inicio</a>
+        </footer>
+    </body>
+</html>
